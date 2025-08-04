@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layers>
+  <layer
+      name="rer.slate2html"
+      interface="rer.slate2html.interfaces.IRerSlate2HtmlLayer"
+      />
+</layers>
