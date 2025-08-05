@@ -3,4 +3,4 @@
 from zope.i18nmessageid import MessageFactory
 
 
-_ = MessageFactory("rer.slate2html")
+_ = MessageFactory("rer.blocks2html")

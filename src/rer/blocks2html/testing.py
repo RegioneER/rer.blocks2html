@@ -7,11 +7,10 @@ from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
 
-import rer.slate2html
+import rer.blocks2html
 
 
-class RerSlate2HtmlLayer(PloneSandboxLayer):
-
+class RerBlocks2HtmlLayer(PloneSandboxLayer):
     defaultBases = (PLONE_FIXTURE,)
 
     def setUpZope(self, app, configurationContext):
@@ -24,32 +23,32 @@ class RerSlate2HtmlLayer(PloneSandboxLayer):
         import plone.restapi
 
         self.loadZCML(package=plone.restapi)
-        self.loadZCML(package=rer.slate2html)
+        self.loadZCML(package=rer.blocks2html)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, "rer.slate2html:default")
+        applyProfile(portal, "rer.blocks2html:default")
 
 
-RER_SLATE2HTML_FIXTURE = RerSlate2HtmlLayer()
+RER_BLOCKS2HTML_FIXTURE = RerBlocks2HtmlLayer()
 
 
-RER_SLATE2HTML_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(RER_SLATE2HTML_FIXTURE,),
-    name="RerSlate2HtmlLayer:IntegrationTesting",
+RER_BLOCKS2HTML_INTEGRATION_TESTING = IntegrationTesting(
+    bases=(RER_BLOCKS2HTML_FIXTURE,),
+    name="RerBlocks2HtmlLayer:IntegrationTesting",
 )
 
 
-RER_SLATE2HTML_FUNCTIONAL_TESTING = FunctionalTesting(
-    bases=(RER_SLATE2HTML_FIXTURE,),
-    name="RerSlate2HtmlLayer:FunctionalTesting",
+RER_BLOCKS2HTML_FUNCTIONAL_TESTING = FunctionalTesting(
+    bases=(RER_BLOCKS2HTML_FIXTURE,),
+    name="RerBlocks2HtmlLayer:FunctionalTesting",
 )
 
 
-RER_SLATE2HTML_ACCEPTANCE_TESTING = FunctionalTesting(
+RER_BLOCKS2HTML_ACCEPTANCE_TESTING = FunctionalTesting(
     bases=(
-        RER_SLATE2HTML_FIXTURE,
+        RER_BLOCKS2HTML_FIXTURE,
         REMOTE_LIBRARY_BUNDLE_FIXTURE,
         z2.ZSERVER_FIXTURE,
     ),
-    name="RerSlate2HtmlLayer:AcceptanceTesting",
+    name="RerBlocks2HtmlLayer:AcceptanceTesting",
 )

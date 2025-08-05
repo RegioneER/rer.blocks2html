@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""Installer for the rer.slate2html package."""
+"""Installer for the rer.blocks2html package."""
 
 from setuptools import find_packages
 from setuptools import setup
@@ -15,7 +15,7 @@ long_description = "\n\n".join(
 
 
 setup(
-    name="rer.slate2html",
+    name="rer.blocks2html",
     version="1.0a1",
     description="Add-on that convert slate text into HTML",
     long_description=long_description,
@@ -36,12 +36,12 @@ setup(
     keywords="Python Plone CMS",
     author="RedTurtle Technology",
     author_email="sviluppo@redturtle.it",
-    url="https://github.com/collective/rer.slate2html",
+    url="https://github.com/collective/rer.blocks2html",
     project_urls={
-        "PyPI": "https://pypi.org/project/rer.slate2html/",
-        "Source": "https://github.com/collective/rer.slate2html",
-        "Tracker": "https://github.com/collective/rer.slate2html/issues",
-        # 'Documentation': 'https://rer.slate2html.readthedocs.io/en/latest/',
+        "PyPI": "https://pypi.org/project/rer.blocks2html/",
+        "Source": "https://github.com/collective/rer.blocks2html",
+        "Tracker": "https://github.com/collective/rer.blocks2html/issues",
+        # 'Documentation': 'https://rer.blocks2html.readthedocs.io/en/latest/',
     },
     license="GPL version 2",
     packages=find_packages("src", exclude=["ez_setup"]),
@@ -72,6 +72,6 @@ setup(
     [z3c.autoinclude.plugin]
     target = plone
     [console_scripts]
-    update_locale = rer.slate2html.locales.update:update_locale
+    update_locale = rer.blocks2html.locales.update:update_locale
     """,
 )
