@@ -1,5 +1,5 @@
 ==============
-rer.slate2html
+rer.blocks2html
 ==============
 
 User documentation

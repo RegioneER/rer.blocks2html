@@ -1,7 +1,7 @@
-* rer.slate2html version:
-* Plone Version:
-* Python version:
-* Operating System: Linux
+- rer.blocks2html version:
+- Plone Version:
+- Python version:
+- Operating System: Linux
 
 ### Description
 
