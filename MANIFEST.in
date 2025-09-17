@@ -5,3 +5,8 @@ exclude tox.ini
 exclude *.txt
 exclude .gitlab-ci.yml
 global-exclude *.pyc
+exclude .coveragerc
+include base.cfg
+include bobtemplate.cfg
+include buildout.cfg
+include test_plone60.cfg
