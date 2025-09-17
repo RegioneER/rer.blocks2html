@@ -27,9 +27,9 @@
     :alt: License
 
 
-==============
+===============
 rer.blocks2html
-==============
+===============
 
 Add-on that convert slate text into HTML.
 
