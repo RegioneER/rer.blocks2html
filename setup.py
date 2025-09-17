@@ -16,7 +16,7 @@ long_description = "\n\n".join(
 
 setup(
     name="rer.blocks2html",
-    version="1.0.1.dev0",
+    version="1.0.1",
     description="Add-on that convert slate text into HTML",
     long_description=long_description,
     # Get more from https://pypi.org/classifiers/
